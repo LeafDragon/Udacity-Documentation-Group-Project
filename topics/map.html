@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8"/>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- CSS style guide -->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css"/>
+	<!-- jQuery CDN -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<!-- JS file -->
+	<script src="../js/jquery.easy-autocomplete.min.js"></script>
+	<!-- CSS file -->
+	<link rel="stylesheet" href="../css/easy-autocomplete.min.css">
+	<!-- Additional CSS Themes file - not required-->
+	<link rel="stylesheet" href="../css/easy-autocomplete.themes.min.css">
+  <script type="text/javascript" src="../js/topic-autocomplete.js"></script>
+  <!-- prism for syntax highlighting -->
+	<link rel="stylesheet" href="../css/prism.css">
+  <script src="../js/prism.js" defer></script>
+
+	<!-- map.css -->
+	<link rel="stylesheet" href="../css/map.css"
+	</head>
+	<body>
+		<!-- Full header with title and Udacity logo -->
+		<div id="template-doc-masthead" class="doc-masthead">
+			<h1>Doc<img id="logo" src="../img/udacity.svg">mentation Project</h1>
+		</div>
+		<div class="doc-header"><h2>Topic</h2>
+		</div>
+		<!-- Main body of the page, including the navigation -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 doc-sidebar">
+					<!-- Navigation section -->
+					<nav class="nav flex-column">
+						<input id="template-links" />
+						<a class="nav-link" href="index.html">Home</a>
+ 						<a class="nav-link" href="#">Topic A</a>
+  						<a class="nav-link" href="#">Topic B</a>
+  						<a class="nav-link" href="#">Topic C</a>
+  						<a class="nav-link" href="topics/objects.html">Object</a>
+					</nav>
+				</div>
+				<!-- Here begins the various cards for the sections of the topic -->
+				<div class="col-sm-9 doc-main">
+					<div class="card">
+  						<div class="card-header">Intro</div>
+  						<div class="card-body">
+      					<p>The map() method is used for arrays.</p>
+								<p>It allows us to easily to create a copy of the original array.</p>
+								<p>Can also make a modified copy of the original array.</p>
+    					</div>
+					</div>
+					<div class="card">
+  						<div class="card-header">Illustration</div>
+  						<div class="card-body">
+								<img src="../img/map.jpg" alt="Map of arrays">
+    					</div>
+					</div>
+					<div class="card">
+  						<div class="card-header">The Call</div>
+  						<div class="card-body">
+
+    					</div>
+					</div>
+					<div class="card">
+  						<div class="card-header">Video Instruction (optional)</div>
+  						<div class="card-body">
+      					<img id="youTube" src="../img/youtube-logo.png"/>
+      					</div>
+					</div>
+					<div class="card">
+  						<div class="card-header">Examples</div>
+  						<div class="card-body">
+								<p>A simple example of the map.</p>
+      					</div>
+
+						<!--
+						NOTE: IMPORTANT!
+						- Use the block below for all code examples.
+						- Just replace what's inside the code tags
+						  with your sample code
+						- If you need more examples, make a copy of this block
+						-->
+						<div class="card-body">
+							<pre data-src="prism.js" class=" language-javascript">
+								<code class=" language-javascript">
+									const array = [1, 2, 3];
+
+									let newArray = array.map();
+									let modArray = array.map(e => e + 10);
+								</code>
+							</pre>
+						</div>
+
+					</div>
+					<div class="card">
+  						<div class="card-header">Possible Uses</div>
+  						<div class="card-body">
+								<p>One: Use is to copy arrays. So you don't modified the original array.</p>
+								<p>Two: To copy and modify the copied array.</p>
+    					</div>
+					</div>
+					<div class="card">
+  						<div class="card-header">References</div>
+  						<div class="card-body">
+      					<ul>
+      						<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" target="_blank">MDN Map(new table)</a></li>
+									<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">MDN Array.prototype.map()(new tab)</a></li>
+									<li><a href="https://www.discovermeteor.com/blog/understanding-javascript-map/" target="_blank">Discover Meteor JS map()(new tab)</a></li>
+      					</ul>
+      				</div>
+					</div>
+					<div class="card">
+  						<div class="card-header">Bio</div>
+  						<div class="card-body">
+      					<p>A student at Udacity's GWG 2018 Front-end Developer phase 1 course.</p>
+      					</div>
+					</div>
+				</div>
+				<!-- Bottom link for new contibutors to go to Github repo -->
+				<div class="contribute col-sm-12">
+				<p > Want to contribute? Go <a href="https://github.com/dalumiller/Udacity-Documentation-Group-Project">here</a> to get started.</p>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
